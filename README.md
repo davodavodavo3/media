@@ -18,7 +18,7 @@ For Laravel 5*:
 
 Then run `composer install` or `composer update` to download it and autoload.
 
-In `providers` array you need to add new package:
+Then in your config/app.php add
 
 ~~~
 'providers' => array(
@@ -36,7 +36,7 @@ In aliases:
 'aliases' => array(
 
 	//...
-	'Media' => 'Scorpion\LaravelMedia\Facades\Media'
+	'Media' => Scorpion\LaravelMedia\Facades\Media::class,
 	//...
 
 )
