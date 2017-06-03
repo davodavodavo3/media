@@ -1,5 +1,5 @@
 <?php 
-namespace Scorpion\LaravelMedia\Media;
+namespace Scorpion\LaravelMedia;
 
 use Illuminate\Support\ServiceProvider;
 
