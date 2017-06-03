@@ -24,7 +24,7 @@ Then in your config/app.php add
 'providers' => array(
 
 	//...
-	'Scorpion\LaravelMedia\MediaServiceProvider',
+	Scorpion\LaravelMedia\MediaServiceProvider::class,
 	//...
 
 )
