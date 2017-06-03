@@ -7,11 +7,10 @@
 		"coub",
 		"soundcloud"
 	],
-	"license": "BSD-3-Clause",
+	"license": "MIT",
 	"authors": [
 		{
-		  "name": "Kane Cohen",
-		  "email": "kanecohen@gmail.com"
+		  "name": "Scorpion"
 		}
 	],
 	"require": {
