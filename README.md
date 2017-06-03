@@ -13,10 +13,14 @@ For Laravel 5*:
 ~~~
     "davodavodavo3/media": "dev-master"
     // or
-    "davodavodavo3/media": "5.3.*"
+    "davodavodavo3/media": "5.4.*@dev",
 ~~~
-
 Then run `composer install` or `composer update` to download it and autoload.
+
+Or simple run:
+~~~
+composer require "davodavodavo3/media":"5.4.*@dev"
+~~~
 
 Then in your config/app.php add
 
