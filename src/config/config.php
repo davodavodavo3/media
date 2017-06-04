@@ -124,24 +124,7 @@ return [
                 ],
             ],
             'data' => null,
-            'dataCallback' => function($embed) {
-                $provider = $embed->getProvider();
-                $url = $provider->info->dataUrl . '&key=' . config('embed.google_api_key');
-                $response = json_decode(file_get_contents($url))->items[0];
-
-                return [
-                    'title' => $response->snippet->title,
-                    'description' => $response->snippet->description,
-                    'created_at' => $response->snippet->publishedAt,
-                    'image' => [
-                        'small' => $response->snippet->thumbnails->default->url,
-                        'medium' => $response->snippet->thumbnails->medium->url,
-                        'large' => $response->snippet->thumbnails->high->url,
-                        'max' => $response->snippet->thumbnails->maxres->url,
-                    ],
-                    'full' => $response,
-                ];
-            },
+            'dataCallback' => null,
         ],
 
         'liveleak' => [
@@ -191,23 +174,7 @@ return [
                 ],
             ],
             'data' => null,
-            'dataCallback' => function($embed) {
-                $url = $embed->getProvider()->info->dataUrl;
-                $response = json_decode(file_get_contents($url))[0];
-
-                return [
-                    'title'  => $response->title,
-                    'description' => $response->description,
-                    'created_at'  => $response->upload_date,
-                    'image' => [
-                        'small'  => $response->thumbnail_small,
-                        'medium' => $response->thumbnail_medium,
-                        'large'  => $response->thumbnail_large,
-                        'max'  => $response->thumbnail_large,
-                    ],
-                    'full' => $response,
-                ];
-            },
+            'dataCallback' => null,
         ],
 
         'dailymotion' => [
